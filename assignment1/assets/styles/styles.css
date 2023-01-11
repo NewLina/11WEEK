@@ -1,11 +1,84 @@
+
 .wrapper{
-    margin: 0;
+    margin: 0 20% 0 20%;
     padding: 0;
     max-width: 100%;
+    font-family: 'Open Sans', sans-serif;
 }
+
+
 .heading{
     text-align: center;
     font-size: 3vw;
-    color: #3b665c;
+    color: #B76E79;
 }
 
+.cart{
+    display: grid;
+    grid-template-rows: repeat(4, 24%);
+    row-gap: 3%;
+}
+
+.card{
+    border: 1.5px solid #cc99aa;
+    display: grid;
+    grid-template-columns: 30% 1fr 15%;
+    grid-template-rows: max-content;
+}
+
+.card__image{
+    padding: 15%;
+}
+.image{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+
+.card__price{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-bottom: 30%;
+    padding-right: 20%;
+    font-size: 1.3vw;
+    font-weight: 600;
+    color: #cd426a;
+}
+.item{
+    padding-top: 5%;
+    font-size: 1.1vw;
+}
+.item__title{
+    padding-bottom: 2%;
+    font-weight: 700;
+    font-size: 1.15vw;
+}
+.item__weight, .item__quantity{
+    color: #B76E79;
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10% 5% 10% 0;
+}
+.total-price{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6vw;
+    font-weight: 600;
+}
+
+.button{
+    align-self: center;
+}
+
+.discountButton{
+    background-color: #cc99aa;
+    border: #B76E79;
+    min-height: 4.5vh;
+    height: max-content;
+    width: 25vw;
+    font-size: 1.2vw;
+}

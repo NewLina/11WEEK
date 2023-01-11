@@ -8,11 +8,76 @@
     <link rel="stylesheet" href="./assets/styles/normalize.css">
     <link rel="stylesheet" href="./assets/styles/styles.css">
     <script src="./assets/index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;700&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <title>Корзина</title>
 </head>
 
 <body class="wrapper">
+    <h2 class="heading">Корзина</h2>
 
+    <div class="cart">
+
+        <div class="card cart__card card--1">
+            <div class="card__image"><img class="image" src="./assets/images/choco.png" alt="Шоколадный"></div>
+            <div class="card__item item">
+                <p class="item__title">Пончик "Шоколадный"</p>
+                <p class="item__description">Пончик с шоколадной начинкой, шоколадной кондитерской глазурью и шоколадной
+                    посыпкой</p>
+                <p class="item__weight">Масса нетто: 80 грамм</p>
+                <p class="item__quantity">Количество: 1</p>
+            </div>
+            <div class="card__price"><span class="sum">150</span>руб.</div>
+        </div>
+
+        <div class="card cart__card card--2">
+            <div class="card__image"><img class="image" src="./assets/images/straw.png" alt="Клубничный"></div>
+            <div class="card__item item">
+                <p class="item__title">Пончик "Клубничный"</p>
+                <p class="item__description">Пончик с клубничной начинкой и розовой кондитерской глазурью с цветной
+                    посыпкой</p>
+                <p class="item__weight">Масса нетто: 60 грамм</p>
+                <p class="item__quantity">Количество: 1</p>
+            </div>
+            <div class="card__price"><span class="sum">120</span>руб.</div>
+        </div>
+
+        <div class="card cart__card card--3">
+            <div class="card__image"><img class="image" src="./assets/images/caramel.png" alt="Карамельный"></div>
+            <div class="card__item item">
+                <p class="item__title">Пончик "Карамельный"</p>
+                <p class="item__description">Пончик с карамельной начинкой и белой глазурью</p>
+                <p class="item__weight">Масса нетто: 80 грамм</p>
+                <p class="item__quantity">Количество: 1</p>
+            </div>
+            <div class="card__price"><span class="sum">140</span>руб.</div>
+        </div>
+
+        <div class="card cart__card card--4">
+            <div class="card__image"><img class="image" src="./assets/images/apple.png" alt="Яблочный"></div>
+            <div class="card__item item">
+                <p class="item__title">Пончик "Яблоко с корицей" </p>
+                <p class="item__description">Пончик с начинкой яблоко-корица и посыпкой из сахара</p>
+                <p class="item__weight">Масса нетто: 64 грамм</p>
+                <p class="item__quantity">Количество: 1</p>
+            </div>
+            <div class="card__price"><span class="sum">130</span>руб.</div>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <div class="button">
+            <button class="discountButton">Использовать купон на 20%</button>
+        </div>
+
+        <div class="total-price">
+            <p class="total-price__text">Итого:</p>
+            <span class="total-price__result result"></span>
+        </div>
+    </div>
 </body>
 
 </html>
