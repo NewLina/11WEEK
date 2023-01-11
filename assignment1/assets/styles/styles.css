@@ -1,0 +1,11 @@
+.wrapper{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+.heading{
+    text-align: center;
+    font-size: 3vw;
+    color: #3b665c;
+}
+
