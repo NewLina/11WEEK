@@ -1,0 +1,42 @@
+
+.wrapper{
+    margin: 0 10% 0 10%;
+    padding: 0;
+    max-width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.heading{
+    text-align: center;
+    font-size: 2.5vw;
+    color: darkcyan;
+    padding-bottom: 4%;
+}
+
+.form{
+    display: grid;
+    max-height: max-content;
+    grid-template-rows: repeat(3, 5vh);
+    grid-template-columns: 40%;
+    justify-content: center;
+    row-gap: 20%;
+}
+
+.input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.form__button{
+    min-height: 7vh;
+    max-height: max-content;
+    font-size: 1.4vw;
+    background-color: rgb(96, 180, 180);
+    color: rgb(19, 49, 49);
+    border: 1.5px solid rgb(18, 87, 87);
+    cursor: pointer;
+}
+.input label{
+    color: rgb(19, 49, 49);
+}
