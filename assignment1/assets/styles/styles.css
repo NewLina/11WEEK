@@ -68,6 +68,11 @@
     flex-direction: column;
     font-size: 1.6vw;
     font-weight: 600;
+    align-content: center;
+}
+.total-price__text{
+    margin: 0;
+    padding-bottom: 7%;
 }
 
 .button{
@@ -81,4 +86,11 @@
     height: max-content;
     width: 25vw;
     font-size: 1.2vw;
+    cursor: pointer;
+}
+
+.result{
+    font-size: 2vw;
+    color: #911e42;
+    font-weight: 700;
 }
