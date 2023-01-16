@@ -5,12 +5,13 @@ let sumThree=document.querySelector('.sum3');
 let sumFour=document.querySelector('.sum4');
 let button=document.querySelector('.discountButton');
 
-result.textContent = (`${Number(sumOne.innerHTML)+Number(sumTwo.innerHTML)+Number(sumThree.innerHTML)+Number(sumFour.innerHTML)} руб.`);
+result.textContent = (`${+(sumOne.innerHTML)+ +(sumTwo.innerHTML) + +(sumThree.innerHTML) + +(sumFour.innerHTML)} руб.`);
 
 button.addEventListener('click', makeDiscount); 
 function makeDiscount() {
-    let countDiscount=(`${Number(sumOne.innerHTML)*20/100+Number(sumTwo.innerHTML)*20/100+Number(sumThree.innerHTML)*20/100+Number(sumFour.innerHTML)*20/100}`);
-    result.textContent = (`${Number(sumOne.innerHTML)+Number(sumTwo.innerHTML)+Number(sumThree.innerHTML)+Number(sumFour.innerHTML) - countDiscount} руб.`); 
+    let countDiscount=(`${+(sumOne.innerHTML)*20/100 + +(sumTwo.innerHTML)*20/100 + +(sumThree.innerHTML)*20/100 + +(sumFour.innerHTML)*20/100}`);
+    result.textContent = (`${+(sumOne.innerHTML) + +(sumTwo.innerHTML)+ +(sumThree.innerHTML)+ +(sumFour.innerHTML) - countDiscount} руб.`); 
     button.disabled=true;
+    button.style.cursor="default";
 }
 
